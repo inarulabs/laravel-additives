@@ -1,0 +1,31 @@
+{
+    "name": "inaru/laravel-additives",
+    "description": "laravel additives",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "razy",
+            "email": "razy.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "iNaru\\Support\\": "src/Support",
+            "iNaru\\Traits\\": "src/Traits"
+        },
+        "files": [
+            "src/Helpers/string_helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "iNaru\\Additives\\Tests\\": "tests/"
+        }
+    }
+}
